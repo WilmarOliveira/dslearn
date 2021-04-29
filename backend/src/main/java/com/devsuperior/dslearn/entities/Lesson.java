@@ -100,6 +100,18 @@ public abstract class Lesson implements Serializable {
 		return enrollmentsDone;
 	}
 
+	public List<Deliver> getDeliveries() {
+		return deliveries;
+	}
+
+	public List<Topic> getTopics() {
+		return topics;
+	}
+
+	public void setEnrollmentsDone(Set<Enrollment> enrollmentsDone) {
+		this.enrollmentsDone = enrollmentsDone;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

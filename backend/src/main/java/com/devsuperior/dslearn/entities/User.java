@@ -82,6 +82,14 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
+	public Set<Role> getRole() {
+		return role;
+	}
+
+	public List<Notification> getNotifications() {
+		return notifications;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
